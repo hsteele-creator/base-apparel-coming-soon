@@ -1,5 +1,5 @@
 const submitBtn = document.querySelector("#submit");
-const emailInput = document.querySelector(".email-input")''
+const emailInput = document.querySelector(".email-input");
 
 submitBtn.addEventListener("click", ValidateEmail)
 
