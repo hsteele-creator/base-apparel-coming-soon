@@ -7,9 +7,8 @@
 
 
 .container {
-    height: 100%;
+    height: 90%;
     width: 375px;
-    height: 700px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,6 +17,14 @@
     transform: translateX(-50%) translateY(-50%);
     background-color: lightpink;
 }
+
+.top {
+    background-image: url("images/hero-mobile.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
 
 .bottom {
     text-align: center;
@@ -50,6 +57,7 @@ p {
     border-radius: 6px;
     margin-left: 20px;
     border: none;
+    margin-bottom: 20px;
 }
 
 #submit:hover {
@@ -63,4 +71,32 @@ p {
 
 .form {
     display: flex;
+}
+
+@media(min-width: 600px) {
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 700px;
+        height: 700px;
+        display: flex;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    .container svg {
+        display: none;
+    }
+
+    .top {
+        background-image: url("images/hero-desktop.jpg");
+        width: 100vw;
+        height: 100vh;
+        margin: 50px 0;
+    }
+
+    .bottom{
+        padding: 100px 20px;
+    }
 }
