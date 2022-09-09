@@ -2,21 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: lightpink;
+    background-color: rgb(250, 249, 246);
 }
 
 .container {
     width: 100%;
     height: 100%;
-    max-width: 375px;
-    max-width: 700px;
+    /* max-width: 375px;
+    max-width: 700px; */
     position: absolute;
     top: 50%;
     left: 50%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background-color: lightpink;
 }
 
 .top {
@@ -76,13 +75,13 @@ p {
 
 @media(min-width: 600px) {
 
+
     .container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 700px;
-        height: 430px;
+        height: 90%;
+        width: 100%;
         display: flex;
-        background-color: lightpink;
+        justify-content: space-around;
+        
     }
 
     .container svg {
@@ -91,13 +90,20 @@ p {
 
     .top {
         background-image: url("images/hero-desktop.jpg");
-        background-size: 100% 430px;
-        width: 100vw;
-        height: 100vh;
+        background-size: 100%;
+        width: 45%;
+        height: 90%;
+        margin-top: auto;
+        margin-bottom: auto;
+
     }
 
     .bottom{
-        padding: 100px 20px;
+        height: 90%;
+        width: 45%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 10%;
     }
 
     .form {
